@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lumino</RootNamespace>
     <AssemblyName>Lumino</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -151,13 +151,17 @@
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GEV AXYZ\GEV Common API\GEV Common API.csproj">
-      <Project>{2d086dd7-bcc0-474d-a4db-360e17c3669f}</Project>
-      <Name>GEV Common API</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\AboutBox.png" />
+    <None Include="Resources\Font.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\StatusOK.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\PlaybackPreview.png" />
+    <None Include="Resources\F1Help.png" />
+    <None Include="Resources\Toolbox.png" />
+    <None Include="Resources\Document.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -54,7 +54,7 @@
             this.label1.Location = new System.Drawing.Point(146, 12);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(3);
-            this.label1.Size = new System.Drawing.Size(280, 44);
+            this.label1.Size = new System.Drawing.Size(220, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "GEV Lumino Billboard";
             // 
@@ -65,7 +65,7 @@
             this.label2.Location = new System.Drawing.Point(149, 56);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(3);
-            this.label2.Size = new System.Drawing.Size(113, 29);
+            this.label2.Size = new System.Drawing.Size(94, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Version: 0.1b";
             // 
@@ -76,7 +76,7 @@
             this.label3.Location = new System.Drawing.Point(149, 85);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(3);
-            this.label3.Size = new System.Drawing.Size(294, 29);
+            this.label3.Size = new System.Drawing.Size(240, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Developed by Ganz Youth Workshop";
             // 
@@ -87,7 +87,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(149, 114);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Padding = new System.Windows.Forms.Padding(3);
-            this.linkLabel1.Size = new System.Drawing.Size(183, 29);
+            this.linkLabel1.Size = new System.Drawing.Size(147, 25);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "http://ganzmuhely.hu";
@@ -103,7 +103,7 @@
             // 
             // AboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 621);
             this.Controls.Add(this.textBox1);
@@ -119,7 +119,7 @@
             this.Name = "AboutForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Névjegy";
+            this.Text = "About";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

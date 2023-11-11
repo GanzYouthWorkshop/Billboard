@@ -42,10 +42,10 @@
             // lbxCharacters
             // 
             this.lbxCharacters.FormattingEnabled = true;
-            this.lbxCharacters.ItemHeight = 17;
+            this.lbxCharacters.ItemHeight = 12;
             this.lbxCharacters.Location = new System.Drawing.Point(6, 24);
             this.lbxCharacters.Name = "lbxCharacters";
-            this.lbxCharacters.Size = new System.Drawing.Size(251, 276);
+            this.lbxCharacters.Size = new System.Drawing.Size(251, 268);
             this.lbxCharacters.TabIndex = 0;
             // 
             // btnAddCharacter
@@ -93,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 19);
+            this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Name:";
             // 
@@ -114,12 +114,12 @@
             // 
             this.tbxFontName.Location = new System.Drawing.Point(66, 12);
             this.tbxFontName.Name = "tbxFontName";
-            this.tbxFontName.Size = new System.Drawing.Size(212, 25);
+            this.tbxFontName.Size = new System.Drawing.Size(212, 21);
             this.tbxFontName.TabIndex = 8;
             // 
             // FontEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(286, 463);
             this.Controls.Add(this.tbxFontName);
@@ -131,6 +131,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FontEditor";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Edit font";
             this.groupBox1.ResumeLayout(false);

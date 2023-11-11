@@ -56,16 +56,16 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(7, 325);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 25);
+            this.textBox1.Size = new System.Drawing.Size(218, 21);
             this.textBox1.TabIndex = 5;
             // 
             // lbxFonts
             // 
             this.lbxFonts.FormattingEnabled = true;
-            this.lbxFonts.ItemHeight = 17;
+            this.lbxFonts.ItemHeight = 12;
             this.lbxFonts.Location = new System.Drawing.Point(5, 26);
             this.lbxFonts.Name = "lbxFonts";
-            this.lbxFonts.Size = new System.Drawing.Size(220, 293);
+            this.lbxFonts.Size = new System.Drawing.Size(220, 292);
             this.lbxFonts.TabIndex = 0;
             // 
             // btnAddFont
@@ -111,7 +111,7 @@
             // 
             // FontCollectionEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(247, 471);
             this.Controls.Add(this.gbxFonts);
@@ -121,6 +121,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FontCollectionEditor";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Fonts";
             this.gbxFonts.ResumeLayout(false);
