@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace Lumino
 {
@@ -76,55 +77,38 @@ namespace Lumino
         private void button1_Click(object sender, EventArgs e)
         {
             int colCounter = 0;
-            Bitmap bmp = new Bitmap(10000, 7);
+            
             Font currentFont = this.cbxFont.SelectedItem as Font;
+
+            List<byte> data = new List<byte>();
             foreach(char c in this.tbxMessage.Text)
             {
                 Character glyph = currentFont.Characters.FirstOrDefault(g => g.CharacterValue == c.ToString());
-
                 if(glyph != null)
                 {
-                    foreach(byte b in glyph.Glyph)
-                    {
-                        byte mask = 1;
-                        Color color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 6, color);
-
-                        mask <<= 1;
-                        color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 5, color);
-
-                        mask <<= 1;
-                        color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 4, color);
-
-                        mask <<= 1;
-                        color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 3, color);
-
-                        mask <<= 1;
-                        color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 2, color);
-
-                        mask <<= 1;
-                        color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 1, color);
-
-                        mask <<= 1;
-                        color = (mask & b) > 0 ? Color.Red : Color.Black;
-                        bmp.SetPixel(colCounter, 0, color);
-
-                        colCounter++;
-                    }
+                    data.AddRange(glyph.Glyph);
                 }
                 else
                 {
-                    colCounter += 6;
+                    data.AddRange(new byte[]{0, 0, 0, 0, 0, 0 });
                 }
             }
-            Bitmap result = new Bitmap(colCounter, 7);
-            Graphics.FromImage(result).DrawImage(bmp, 0, 0, bmp.Width, bmp.Height);
-            this.pictureBox1.Image = result;
+
+            Bitmap bmp = new Bitmap(data.Count * 10, 7 * 10);
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                for (int x = 0; x < data.Count; x++)
+                {
+                    for (int y = 0; y < 7; y++)
+                    {
+                        byte mask = (byte)(1 << (6 - y));
+                        Brush color = (mask & data[x]) > 0 ? Brushes.Red : Brushes.Black;
+                        g.FillRectangle(color, new Rectangle(x * 10, y * 10, 10, 10));
+                    }
+                }
+            }
+
+            this.pictureBox1.Image = bmp;
         }
 
         private void button6_Click(object sender, EventArgs e)

@@ -1,5 +1,4 @@
-﻿using GEV.API.Templating;
-using Lumino.Store;
+﻿using Lumino.Store;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -21,51 +20,51 @@ namespace Lumino.Compiler
 
         public static void CompileAndUploadProject(Billboard board, string port)
         {
-            string firmwareTemplate = File.ReadAllText(@".\Firmware\firmware.ino");
+            //string firmwareTemplate = File.ReadAllText(@".\Firmware\firmware.ino");
 
-            byte[] data = CreateByteArray(Globals.Fonts.First(f => f.Name == board.Font), board.Message);
+            //byte[] data = CreateByteArray(Globals.Fonts.First(f => f.Name == board.Font), board.Message);
 
-            Dictionary<string, object> parameters = new Dictionary<string, object>()
-            {
-                { "DisplayWidth", board.DisplayWidth },
-                { "FrameWidth", board.FrameWidth },
-                { "FrameDuration", board.FrameUpdateInterval },
+            //Dictionary<string, object> parameters = new Dictionary<string, object>()
+            //{
+            //    { "DisplayWidth", board.DisplayWidth },
+            //    { "FrameWidth", board.FrameWidth },
+            //    { "FrameDuration", board.FrameUpdateInterval },
 
-                { "DataLength", data.Length },
-                { "Data", String.Join(",", data) },
-            };
-            string fiwmrare = TextTemplate.FilOutTemplate(firmwareTemplate, parameters);
-
-
-
-            string file = AppDomain.CurrentDomain.BaseDirectory + @"Compiler\board\board.ino";
+            //    { "DataLength", data.Length },
+            //    { "Data", String.Join(",", data) },
+            //};
+            //string fiwmrare = TextTemplate.FilOutTemplate(firmwareTemplate, parameters);
 
 
-            if (File.Exists(file))
-            {
-                File.Delete(file);
-            }
-            File.WriteAllText(file, fiwmrare);
+
+            //string file = AppDomain.CurrentDomain.BaseDirectory + @"Compiler\board\board.ino";
+
+
+            //if (File.Exists(file))
+            //{
+            //    File.Delete(file);
+            //}
+            //File.WriteAllText(file, fiwmrare);
 
             
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.CreateNoWindow = true;
-            startInfo.UseShellExecute = false;
-            startInfo.FileName = @".\Compiler\arduino_debug.exe";
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            startInfo.RedirectStandardOutput = true;
-            startInfo.Arguments = "--upload --board arduino:avr:uno --port "+port+" " + "\"" + file + "\"";
+            //ProcessStartInfo startInfo = new ProcessStartInfo();
+            //startInfo.CreateNoWindow = true;
+            //startInfo.UseShellExecute = false;
+            //startInfo.FileName = @".\Compiler\arduino_debug.exe";
+            //startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            //startInfo.RedirectStandardOutput = true;
+            //startInfo.Arguments = "--upload --board arduino:avr:uno --port "+port+" " + "\"" + file + "\"";
 
-            exeProcess = new Process()
-            {
-                StartInfo = startInfo
-            };
+            //exeProcess = new Process()
+            //{
+            //    StartInfo = startInfo
+            //};
 
-            exeProcess.EnableRaisingEvents = true;
-            exeProcess.OutputDataReceived += ExeProcess_OutputDataReceived; ;
-            exeProcess.Exited += ExeProcess_Exited;
-            exeProcess.Start();
-            exeProcess.BeginOutputReadLine();
+            //exeProcess.EnableRaisingEvents = true;
+            //exeProcess.OutputDataReceived += ExeProcess_OutputDataReceived; ;
+            //exeProcess.Exited += ExeProcess_Exited;
+            //exeProcess.Start();
+            //exeProcess.BeginOutputReadLine();
         }
 
         private static void ExeProcess_Exited(object sender, EventArgs e)

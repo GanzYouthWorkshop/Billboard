@@ -65,7 +65,7 @@
             // 
             this.tbxMessage.Location = new System.Drawing.Point(162, 269);
             this.tbxMessage.Name = "tbxMessage";
-            this.tbxMessage.Size = new System.Drawing.Size(919, 25);
+            this.tbxMessage.Size = new System.Drawing.Size(919, 21);
             this.tbxMessage.TabIndex = 1;
             // 
             // panel1
@@ -82,7 +82,6 @@
             this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(933, 129);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -95,7 +94,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1103, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1103, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -104,13 +103,13 @@
             this.fájlToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fájlToolStripMenuItem.Name = "fájlToolStripMenuItem";
-            this.fájlToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fájlToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fájlToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -119,13 +118,13 @@
             this.eszközökToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.betűkészletkezelőToolStripMenuItem});
             this.eszközökToolStripMenuItem.Name = "eszközökToolStripMenuItem";
-            this.eszközökToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.eszközökToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.eszközökToolStripMenuItem.Text = "Tools";
             // 
             // betűkészletkezelőToolStripMenuItem
             // 
             this.betűkészletkezelőToolStripMenuItem.Name = "betűkészletkezelőToolStripMenuItem";
-            this.betűkészletkezelőToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
+            this.betűkészletkezelőToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.betűkészletkezelőToolStripMenuItem.Text = "Font editor";
             this.betűkészletkezelőToolStripMenuItem.Click += new System.EventHandler(this.betűkészletkezelőToolStripMenuItem_Click);
             // 
@@ -134,13 +133,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -149,7 +148,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 364);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 19);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Frame width:";
             // 
@@ -158,7 +157,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 395);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 19);
+            this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "Frame duration:";
             // 
@@ -171,7 +170,7 @@
             0,
             0});
             this.nudFrameWidth.Name = "nudFrameWidth";
-            this.nudFrameWidth.Size = new System.Drawing.Size(120, 25);
+            this.nudFrameWidth.Size = new System.Drawing.Size(120, 21);
             this.nudFrameWidth.TabIndex = 16;
             this.nudFrameWidth.Value = new decimal(new int[] {
             1,
@@ -193,7 +192,7 @@
             0,
             0});
             this.nudFrameDuration.Name = "nudFrameDuration";
-            this.nudFrameDuration.Size = new System.Drawing.Size(120, 25);
+            this.nudFrameDuration.Size = new System.Drawing.Size(120, 21);
             this.nudFrameDuration.TabIndex = 17;
             this.nudFrameDuration.Value = new decimal(new int[] {
             100,
@@ -211,7 +210,7 @@
             "75"});
             this.cbxDisplayWidth.Location = new System.Drawing.Point(162, 331);
             this.cbxDisplayWidth.Name = "cbxDisplayWidth";
-            this.cbxDisplayWidth.Size = new System.Drawing.Size(121, 25);
+            this.cbxDisplayWidth.Size = new System.Drawing.Size(121, 20);
             this.cbxDisplayWidth.TabIndex = 18;
             // 
             // label3
@@ -219,7 +218,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 334);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 19);
+            this.label3.Size = new System.Drawing.Size(80, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Display width:";
             // 
@@ -256,7 +255,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 19);
+            this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 24;
             this.label4.Text = "Programming port:";
             // 
@@ -265,7 +264,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 272);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 25;
             this.label5.Text = "Message:";
             // 
@@ -275,7 +274,7 @@
             this.cbxProgrammingPort.FormattingEnabled = true;
             this.cbxProgrammingPort.Location = new System.Drawing.Point(163, 301);
             this.cbxProgrammingPort.Name = "cbxProgrammingPort";
-            this.cbxProgrammingPort.Size = new System.Drawing.Size(57, 25);
+            this.cbxProgrammingPort.Size = new System.Drawing.Size(57, 20);
             this.cbxProgrammingPort.TabIndex = 26;
             // 
             // btnSearchPorts
@@ -293,7 +292,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(13, 427);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 19);
+            this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 29;
             this.label6.Text = "Font:";
             // 
@@ -303,12 +302,12 @@
             this.cbxFont.FormattingEnabled = true;
             this.cbxFont.Location = new System.Drawing.Point(163, 424);
             this.cbxFont.Name = "cbxFont";
-            this.cbxFont.Size = new System.Drawing.Size(121, 25);
+            this.cbxFont.Size = new System.Drawing.Size(121, 20);
             this.cbxFont.TabIndex = 28;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1103, 534);
             this.Controls.Add(this.label6);

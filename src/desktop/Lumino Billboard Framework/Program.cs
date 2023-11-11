@@ -16,7 +16,7 @@ namespace Lumino
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainFor
+            Application.Run(new MainForm());
         }
     }
 }
